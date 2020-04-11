@@ -1,0 +1,32 @@
+<div class="row">
+
+<p id="notice">
+  <%=  notice %>
+</p>
+
+<div class="col-xs-3">
+  <!-- ユーザー情報 -->
+  <%= render 'books/user', user: @user %>
+  <!-- 新規投稿 -->
+  <%= render 'books/book', book: @book %>
+</div>
+
+<!-- 本の詳細 -->
+<div class="col-xs-9">
+<h2>Book detail</h2>
+
+  <table class="table">
+  <tbody>
+      <tr>
+        <td><%= attachment_image_tag @user, :profile_image,:fill, 40, 40, class:"attachment user profile_image", fallback:"no_image.jpg" %><br><%= link_to @user.name, user_path(@user) %></td>
+        <td><%= link_to @book2.title, book_path(@book2)  %></td>
+        <td><%= @book2.body %></td>
+        <% if @user == current_user %>
+        <td><%= link_to "Edit", edit_book_path(@book2), class:"btn-sm btn-success" %></td>
+        <td><%= link_to "Destroy", destroy_book_path(@book2), method: :delete, "data-confirm" => "本当に削除しますか？", class:"btn-sm btn-danger" %></td>
+        <% end %>
+      </tr>
+  </tbody>
+  </table>
+</div>
+</div>

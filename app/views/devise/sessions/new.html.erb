@@ -1,0 +1,31 @@
+<div class="body">
+  <div class="container">
+
+        <p id="notice"></p>
+
+
+        <h2>Log in</h2>
+
+<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
+  <div class="field">
+    <label for="user_name">Name</label><br>
+    <%= f.text_field :name, autofocus: true, class:"name", id:"user_name" %>
+  </div>
+  <div class="field">
+    <label for="user_password">Password</label><br>
+    <%= f.password_field :password, autocomplete: "off", class:"password", id:"user_password" %>
+  </div>
+  <div class="field">
+    <%= f.check_box :remember_me %>
+    <label for="user_remember_me">Remember me</label>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Log in", class:"btn btn-primary" %>
+  </div>
+<% end %>
+
+  <a class="sign_up" href="/users/sign_up">Sign up</a><br>
+  <a href="/users/password/new">Forgot your password?</a><br>
+   </div>
+</div>

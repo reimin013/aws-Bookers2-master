@@ -1,0 +1,51 @@
+<div class="body">
+  <div class="container">
+
+        <p id="notice"></p>
+
+
+        <h2>Sign up</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+
+   <% if resource.errors.any? %>
+   <%= resource.errors.count %>errors prohibited this user from being saved:
+  <div id="error_explanation" class="alert alert-danger">
+    <ul>
+      <% resource.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+  <div class="field">
+    <label for="user_name">Name</label><br>
+    <%= f.text_field :name, autofocus: true, class:"name", name:"user[name]", id:"user_name" %>
+  </div>
+
+  <div class="field">
+    <label for="user_email">Email</label><br>
+    <%= f.email_field :email, autofocus: true, class:"email", name:"user[email]", id:"user_email" %>
+  </div>
+
+  <div class="field">
+    <label for="user_password">Password</label>
+    <em>(6 characters minimum)</em>
+    <br>
+    <%= f.password_field :password, autocomplete: "off", class:"password", name:"user[password]", id:"user_password" %>
+  </div>
+
+  <div class="field">
+    <label for="user_password_confirmation">Password confirmation</label><br>
+    <%= f.password_field :password_confirmation, autocomplete: "off", class:"password_confirm", name:"user[password_confirmation]", id:"user_password_confirmation" %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up", class:"btn btn-success" %>
+  </div>
+<% end %>
+
+  <a class="sign_in" href="/users/sign_in">Log in</a><br>
+  </div>
+</div>

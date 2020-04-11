@@ -1,0 +1,34 @@
+<h2>User info</h2>
+
+<%= form_for(@user) do |f| %>
+
+   <% if @user.errors.any? %>
+   <%= @user.errors.count %>errors prohibited this user from being saved:
+  <div id="error_explanation" class="alert alert-danger">
+    <ul>
+      <% @user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+    <div class="field">
+      <label for="user_name">Name</label>
+        <%= f.text_field :name, class:"edit_user" %>
+    </div>
+        <!-- <span class="fa fa-user form-control-icon" aria-hidden="true"></span> -->
+    <div class="field">
+        <label for="user_image">Image</label>
+        <%= attachment_image_tag @user, :profile_image, :fill, 60, 60, format:'jpeg' %>
+        <%= f.attachment_field :profile_image, class:"user_image" %>
+    </div>
+    <div class="field">
+        <label for="user_introduction">Introduction</label>
+        <%= f.text_area :introduction, class:"introduction" %>
+    </div>
+    <div class="actions">
+        <%= f.submit "Update User", class:"update" %>
+    </div>
+<% end %>
+
