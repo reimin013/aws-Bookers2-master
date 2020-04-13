@@ -270,3 +270,309 @@ Run `bundle install` first.
  DEBUG [1dc0cdf3] 	* Environment: production
  DEBUG [1dc0cdf3] 	* Daemonizing...
   INFO [1dc0cdf3] Finished in 0.491 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2020-04-13 13:06:44 +0000 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [aae936b0] Running [ -d $HOME/.rbenv/versions/2.5.7 ] as ec2-user@13.112.250.117
+ DEBUG [aae936b0] Command: [ -d $HOME/.rbenv/versions/2.5.7 ]
+ DEBUG [aae936b0] Finished in 0.227 seconds with exit status 0 (successful).
+  INFO [ff9ed278] Running /usr/bin/env mkdir -p /tmp as ec2-user@13.112.250.117
+ DEBUG [ff9ed278] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env mkdir -p /tmp )
+  INFO [ff9ed278] Finished in 0.047 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh 0.0%
+  INFO Uploading /tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh 100.0%
+  INFO [5915672b] Running /usr/bin/env chmod 700 /tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh as ec2-user@13.112.250.117
+ DEBUG [5915672b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env chmod 700 /tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh )
+  INFO [5915672b] Finished in 0.045 seconds with exit status 0 (successful).
+  INFO [3d66815f] Running /usr/bin/env git ls-remote git@github.com:reimin013/aws-Bookers2-master.git HEAD as ec2-user@13.112.250.117
+ DEBUG [3d66815f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh" ; /usr/bin/env git ls-remote git@github.com:reimin013/aws-Bookers2-master.git HEAD )
+ DEBUG [3d66815f] 	98c650838cfd1608e8a852db3ef99724990d855b	HEAD
+  INFO [3d66815f] Finished in 1.972 seconds with exit status 0 (successful).
+  INFO [b7e67e71] Running /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/shared /home/ec2-user/aws-Bookers2-master/releases as ec2-user@13.112.250.117
+ DEBUG [b7e67e71] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/shared /home/ec2-user/aws-Bookers2-master/releases )
+  INFO [b7e67e71] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [3757f2d8] Running /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/shared/log /home/ec2-user/aws-Bookers2-master/shared/tmp/pids /home/ec2-user/aws-Bookers2-master/shared/tmp/cache /home/ec2-user/aws-Bookers2-master/shared/tmp/sockets /home/ec2-user/aws-Bookers2-master/shared/public/system /home/ec2-user/aws-Bookers2-master/shared/public/assets as ec2-user@13.112.250.117
+ DEBUG [3757f2d8] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/shared/log /home/ec2-user/aws-Bookers2-master/shared/tmp/pids /home/ec2-user/aws-Bookers2-master/shared/tmp/cache /home/ec2-user/aws-Bookers2-master/shared/tmp/sockets /home/ec2-user/aws-Bookers2-master/shared/public/system /home/ec2-user/aws-Bookers2-master/shared/public/assets )
+  INFO [3757f2d8] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [514ed98f] Running /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/shared/config /home/ec2-user/aws-Bookers2-master/shared as ec2-user@13.112.250.117
+ DEBUG [514ed98f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/shared/config /home/ec2-user/aws-Bookers2-master/shared )
+  INFO [514ed98f] Finished in 0.040 seconds with exit status 0 (successful).
+ DEBUG [011c1657] Running [ -f /home/ec2-user/aws-Bookers2-master/shared/config/master.key ] as ec2-user@13.112.250.117
+ DEBUG [011c1657] Command: [ -f /home/ec2-user/aws-Bookers2-master/shared/config/master.key ]
+ DEBUG [011c1657] Finished in 0.039 seconds with exit status 0 (successful).
+ DEBUG [2fd05f2c] Running [ -f /home/ec2-user/aws-Bookers2-master/shared/.env ] as ec2-user@13.112.250.117
+ DEBUG [2fd05f2c] Command: [ -f /home/ec2-user/aws-Bookers2-master/shared/.env ]
+ DEBUG [2fd05f2c] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [7e86225b] Running [ -f /home/ec2-user/aws-Bookers2-master/shared/puma.rb ] as ec2-user@13.112.250.117
+ DEBUG [7e86225b] Command: [ -f /home/ec2-user/aws-Bookers2-master/shared/puma.rb ]
+ DEBUG [7e86225b] Finished in 0.032 seconds with exit status 0 (successful).
+ DEBUG [09009b1e] Running [ -f /home/ec2-user/aws-Bookers2-master/current/REVISION ] as ec2-user@13.112.250.117
+ DEBUG [09009b1e] Command: [ -f /home/ec2-user/aws-Bookers2-master/current/REVISION ]
+ DEBUG [09009b1e] Finished in 0.032 seconds with exit status 0 (successful).
+ DEBUG [77684ff1] Running /usr/bin/env cat /home/ec2-user/aws-Bookers2-master/current/REVISION 2>/dev/null as ec2-user@13.112.250.117
+ DEBUG [77684ff1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env cat /home/ec2-user/aws-Bookers2-master/current/REVISION 2>/dev/null )
+ DEBUG [77684ff1] 	510fee9ddda55232b95508e38d135f6d2fb8c371
+ DEBUG [77684ff1] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [3307d307] Running [ -f /home/ec2-user/aws-Bookers2-master/repo/HEAD ] as ec2-user@13.112.250.117
+ DEBUG [3307d307] Command: [ -f /home/ec2-user/aws-Bookers2-master/repo/HEAD ]
+ DEBUG [3307d307] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/ec2-user/aws-Bookers2-master/repo
+ DEBUG [e0e571ec] Running if test ! -d /home/ec2-user/aws-Bookers2-master/repo; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/repo'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [e0e571ec] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/repo; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/repo'" 1>&2; false; fi
+ DEBUG [e0e571ec] Finished in 0.031 seconds with exit status 0 (successful).
+  INFO [bc0bb435] Running /usr/bin/env git remote set-url origin git@github.com:reimin013/aws-Bookers2-master.git as ec2-user@13.112.250.117
+ DEBUG [bc0bb435] Command: cd /home/ec2-user/aws-Bookers2-master/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh" ; /usr/bin/env git remote set-url origin git@github.com:reimin013/aws-Bookers2-master.git )
+  INFO [bc0bb435] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [6c02e791] Running /usr/bin/env git remote update --prune as ec2-user@13.112.250.117
+ DEBUG [6c02e791] Command: cd /home/ec2-user/aws-Bookers2-master/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [6c02e791] 	Fetching origin
+ DEBUG [6c02e791] 	From github.com:reimin013/aws-Bookers2-master
+ + 510fee9...98c6508 master     -> master  (forced update)
+  INFO [6c02e791] Finished in 2.474 seconds with exit status 0 (successful).
+ DEBUG [4b554c42] Running if test ! -d /home/ec2-user/aws-Bookers2-master/repo; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/repo'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [4b554c42] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/repo; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/repo'" 1>&2; false; fi
+ DEBUG [4b554c42] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [59d07fbe] Running /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/releases/20200413130646 as ec2-user@13.112.250.117
+ DEBUG [59d07fbe] Command: cd /home/ec2-user/aws-Bookers2-master/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh" ; /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/releases/20200413130646 )
+  INFO [59d07fbe] Finished in 0.040 seconds with exit status 0 (successful).
+  INFO [2e40941a] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ec2-user/aws-Bookers2-master/releases/20200413130646 as ec2-user@13.112.250.117
+ DEBUG [2e40941a] Command: cd /home/ec2-user/aws-Bookers2-master/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/ec2-user/aws-Bookers2-master/releases/20200413130646 )
+  INFO [2e40941a] Finished in 0.405 seconds with exit status 0 (successful).
+ DEBUG [1dcb9e30] Running if test ! -d /home/ec2-user/aws-Bookers2-master/repo; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/repo'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [1dcb9e30] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/repo; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/repo'" 1>&2; false; fi
+ DEBUG [1dcb9e30] Finished in 0.040 seconds with exit status 0 (successful).
+ DEBUG [ba2b231e] Running /usr/bin/env git rev-list --max-count=1 master as ec2-user@13.112.250.117
+ DEBUG [ba2b231e] Command: cd /home/ec2-user/aws-Bookers2-master/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-aws-Bookers2-master-production-vagrant.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [ba2b231e] 	98c650838cfd1608e8a852db3ef99724990d855b
+ DEBUG [ba2b231e] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [8412b428] Running if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [8412b428] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi
+ DEBUG [8412b428] Finished in 0.043 seconds with exit status 0 (successful).
+  INFO [e310de42] Running /usr/bin/env echo "98c650838cfd1608e8a852db3ef99724990d855b" > REVISION as ec2-user@13.112.250.117
+ DEBUG [e310de42] Command: cd /home/ec2-user/aws-Bookers2-master/releases/20200413130646 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env echo "98c650838cfd1608e8a852db3ef99724990d855b" > REVISION )
+  INFO [e310de42] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [826c9e5a] Running /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config /home/ec2-user/aws-Bookers2-master/releases/20200413130646 as ec2-user@13.112.250.117
+ DEBUG [826c9e5a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config /home/ec2-user/aws-Bookers2-master/releases/20200413130646 )
+  INFO [826c9e5a] Finished in 0.038 seconds with exit status 0 (successful).
+ DEBUG [6d1dc899] Running [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config/master.key ] as ec2-user@13.112.250.117
+ DEBUG [6d1dc899] Command: [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config/master.key ]
+ DEBUG [6d1dc899] Finished in 0.037 seconds with exit status 1 (failed).
+ DEBUG [22c42468] Running [ -f /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config/master.key ] as ec2-user@13.112.250.117
+ DEBUG [22c42468] Command: [ -f /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config/master.key ]
+ DEBUG [22c42468] Finished in 0.041 seconds with exit status 0 (successful).
+  INFO [5a8fe96a] Running /usr/bin/env rm /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config/master.key as ec2-user@13.112.250.117
+ DEBUG [5a8fe96a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env rm /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config/master.key )
+  INFO [5a8fe96a] Finished in 0.046 seconds with exit status 0 (successful).
+  INFO [9436a42b] Running /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/config/master.key /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config/master.key as ec2-user@13.112.250.117
+ DEBUG [9436a42b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/config/master.key /home/ec2-user/aws-Bookers2-master/releases/20200413130646/config/master.key )
+  INFO [9436a42b] Finished in 0.042 seconds with exit status 0 (successful).
+ DEBUG [35f8f175] Running [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/.env ] as ec2-user@13.112.250.117
+ DEBUG [35f8f175] Command: [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/.env ]
+ DEBUG [35f8f175] Finished in 0.032 seconds with exit status 1 (failed).
+ DEBUG [2ceb414f] Running [ -f /home/ec2-user/aws-Bookers2-master/releases/20200413130646/.env ] as ec2-user@13.112.250.117
+ DEBUG [2ceb414f] Command: [ -f /home/ec2-user/aws-Bookers2-master/releases/20200413130646/.env ]
+ DEBUG [2ceb414f] Finished in 0.032 seconds with exit status 1 (failed).
+  INFO [53ab9bae] Running /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/.env /home/ec2-user/aws-Bookers2-master/releases/20200413130646/.env as ec2-user@13.112.250.117
+ DEBUG [53ab9bae] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/.env /home/ec2-user/aws-Bookers2-master/releases/20200413130646/.env )
+  INFO [53ab9bae] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [80f67d89] Running /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/releases/20200413130646 /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public as ec2-user@13.112.250.117
+ DEBUG [80f67d89] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/releases/20200413130646 /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public )
+  INFO [80f67d89] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [9a4a463d] Running [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/log ] as ec2-user@13.112.250.117
+ DEBUG [9a4a463d] Command: [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/log ]
+ DEBUG [9a4a463d] Finished in 0.033 seconds with exit status 1 (failed).
+ DEBUG [ea6887f1] Running [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/log ] as ec2-user@13.112.250.117
+ DEBUG [ea6887f1] Command: [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/log ]
+ DEBUG [ea6887f1] Finished in 0.034 seconds with exit status 0 (successful).
+  INFO [af105026] Running /usr/bin/env rm -rf /home/ec2-user/aws-Bookers2-master/releases/20200413130646/log as ec2-user@13.112.250.117
+ DEBUG [af105026] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env rm -rf /home/ec2-user/aws-Bookers2-master/releases/20200413130646/log )
+  INFO [af105026] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [c71c7558] Running /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/log /home/ec2-user/aws-Bookers2-master/releases/20200413130646/log as ec2-user@13.112.250.117
+ DEBUG [c71c7558] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/log /home/ec2-user/aws-Bookers2-master/releases/20200413130646/log )
+  INFO [c71c7558] Finished in 0.031 seconds with exit status 0 (successful).
+ DEBUG [c6cefbc7] Running [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/pids ] as ec2-user@13.112.250.117
+ DEBUG [c6cefbc7] Command: [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/pids ]
+ DEBUG [c6cefbc7] Finished in 0.031 seconds with exit status 1 (failed).
+ DEBUG [6d9d2ae8] Running [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/pids ] as ec2-user@13.112.250.117
+ DEBUG [6d9d2ae8] Command: [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/pids ]
+ DEBUG [6d9d2ae8] Finished in 0.029 seconds with exit status 1 (failed).
+  INFO [ed31dd74] Running /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/tmp/pids /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/pids as ec2-user@13.112.250.117
+ DEBUG [ed31dd74] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/tmp/pids /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/pids )
+  INFO [ed31dd74] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [bd56c793] Running [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/cache ] as ec2-user@13.112.250.117
+ DEBUG [bd56c793] Command: [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/cache ]
+ DEBUG [bd56c793] Finished in 0.030 seconds with exit status 1 (failed).
+ DEBUG [a61a3a11] Running [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/cache ] as ec2-user@13.112.250.117
+ DEBUG [a61a3a11] Command: [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/cache ]
+ DEBUG [a61a3a11] Finished in 0.030 seconds with exit status 0 (successful).
+  INFO [3ead0073] Running /usr/bin/env rm -rf /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/cache as ec2-user@13.112.250.117
+ DEBUG [3ead0073] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env rm -rf /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/cache )
+  INFO [3ead0073] Finished in 0.042 seconds with exit status 0 (successful).
+  INFO [3ade4530] Running /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/tmp/cache /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/cache as ec2-user@13.112.250.117
+ DEBUG [3ade4530] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/tmp/cache /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/cache )
+  INFO [3ade4530] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [043703f4] Running [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/sockets ] as ec2-user@13.112.250.117
+ DEBUG [043703f4] Command: [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/sockets ]
+ DEBUG [043703f4] Finished in 0.030 seconds with exit status 1 (failed).
+ DEBUG [b110fb75] Running [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/sockets ] as ec2-user@13.112.250.117
+ DEBUG [b110fb75] Command: [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/sockets ]
+ DEBUG [b110fb75] Finished in 0.030 seconds with exit status 1 (failed).
+  INFO [77322417] Running /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/tmp/sockets /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/sockets as ec2-user@13.112.250.117
+ DEBUG [77322417] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/tmp/sockets /home/ec2-user/aws-Bookers2-master/releases/20200413130646/tmp/sockets )
+  INFO [77322417] Finished in 0.035 seconds with exit status 0 (successful).
+ DEBUG [e14c2f9d] Running [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/system ] as ec2-user@13.112.250.117
+ DEBUG [e14c2f9d] Command: [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/system ]
+ DEBUG [e14c2f9d] Finished in 0.029 seconds with exit status 1 (failed).
+ DEBUG [228ad127] Running [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/system ] as ec2-user@13.112.250.117
+ DEBUG [228ad127] Command: [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/system ]
+ DEBUG [228ad127] Finished in 0.029 seconds with exit status 1 (failed).
+  INFO [218e1ecb] Running /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/public/system /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/system as ec2-user@13.112.250.117
+ DEBUG [218e1ecb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/public/system /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/system )
+  INFO [218e1ecb] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [c0c5b9a0] Running [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets ] as ec2-user@13.112.250.117
+ DEBUG [c0c5b9a0] Command: [ -L /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets ]
+ DEBUG [c0c5b9a0] Finished in 0.032 seconds with exit status 1 (failed).
+ DEBUG [f2b31ec4] Running [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets ] as ec2-user@13.112.250.117
+ DEBUG [f2b31ec4] Command: [ -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets ]
+ DEBUG [f2b31ec4] Finished in 0.030 seconds with exit status 1 (failed).
+  INFO [2a9a6088] Running /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/public/assets /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets as ec2-user@13.112.250.117
+ DEBUG [2a9a6088] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/shared/public/assets /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets )
+  INFO [2a9a6088] Finished in 0.032 seconds with exit status 0 (successful).
+ DEBUG [8fa3a27c] Running if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [8fa3a27c] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi
+ DEBUG [8fa3a27c] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [923312a3] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/ec2-user/aws-Bookers2-master/shared/bundle as ec2-user@13.112.250.117
+ DEBUG [923312a3] Command: cd /home/ec2-user/aws-Bookers2-master/releases/20200413130646 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/ec2-user/aws-Bookers2-master/shared/bundle )
+ DEBUG [923312a3] 	[DEPRECATED] The `--path` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set path '/home/ec2-user/aws-Bookers2-master/shared/bundle'`, and stop using this flag
+ DEBUG [923312a3] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [923312a3] 	The following gems are missing
+ DEBUG [923312a3] 	 * public_suffix (4.0.3)
+ DEBUG [923312a3] 	 * addressable (2.7.0)
+ DEBUG [923312a3] 	 * net-ssh (5.2.0)
+ DEBUG [923312a3] 	 * net-scp (2.0.0)
+ DEBUG [923312a3] 	 * sshkit (1.21.0)
+ DEBUG [923312a3] 	 * airbrussh (1.4.0)
+ DEBUG [923312a3] 	 * bindex (0.8.1)
+ DEBUG [923312a3] 	 * byebug (11.1.1)
+ DEBUG [923312a3] 	 * capistrano (3.13.0)
+ DEBUG [923312a3] 	 * capistrano-bundler (1.6.0)
+ DEBUG [923312a3] 	 * capistrano-rails (1.4.0)
+ DEBUG [923312a3] 	 * capistrano-rbenv (2.1.6)
+ DEBUG [923312a3] 	 * capistrano3-puma (3.1.1)
+ DEBUG [923312a3] 	 * regexp_parser (1.7.0)
+ DEBUG [923312a3] 	 * xpath (3.2.0)
+ DEBUG [923312a3] 	 * capybara (3.32.0)
+ DEBUG [923312a3] 	 * diff-lcs (1.3)
+ DEBUG [923312a3] 	 * factory_bot (5.1.2)
+ DEBUG [923312a3] 	 * factory_bot_rails (5.1.1)
+ DEBUG [923312a3] 	 * faker (2.11.0)
+ DEBUG [923312a3] 	 * ruby_dep (1.5.0)
+ DEBUG [923312a3] 	 * listen (3.1.5)
+ DEBUG [923312a3] 	 * rspec-support (3.9.2)
+ DEBUG [923312a3] 	 * rspec-core (3.9.1)
+ DEBUG [923312a3] 	 * rspec-expectations (3.9.1)
+ DEBUG [923312a3] 	 * rspec-mocks (3.9.1)
+ DEBUG [923312a3] 	 * rspec-rails (4.0.0)
+ DEBUG [923312a3] 	 * spring (2.1.0)
+ DEBUG [923312a3] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [923312a3] 	 * web-console (3.7.0)
+ DEBUG [923312a3] 	Install missing gems with `bundle install`
+ DEBUG [923312a3] Finished in 0.338 seconds with exit status 1 (failed).
+  INFO [6fb97e00] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /home/ec2-user/aws-Bookers2-master/shared/bundle --jobs 4 --without development test --deployment --quiet as ec2-user@13.112.250.117
+ DEBUG [6fb97e00] Command: cd /home/ec2-user/aws-Bookers2-master/releases/20200413130646 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /home/ec2-user/aws-Bookers2-master/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [6fb97e00] 	[DEPRECATED] The `--deployment` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set deployment 'true'`, and stop using this flag
+ DEBUG [6fb97e00] 	[DEPRECATED] The `--path` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set path '/home/ec2-user/aws-Bookers2-master/shared/bundle'`, and stop using this flag
+ DEBUG [6fb97e00] 	[DEPRECATED] The `--without` flag is deprecated because it relies on being remembered across bundler invocations, which bundler will no longer do in future versions. Instead please use `bundle config set without 'development test'`, and stop using this flag
+  INFO [6fb97e00] Finished in 0.577 seconds with exit status 0 (successful).
+ DEBUG [a1017d8e] Running if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [a1017d8e] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi
+ DEBUG [a1017d8e] Finished in 0.033 seconds with exit status 0 (successful).
+  INFO [fd9a7d6e] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as ec2-user@13.112.250.117
+ DEBUG [fd9a7d6e] Command: cd /home/ec2-user/aws-Bookers2-master/releases/20200413130646 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [fd9a7d6e] 	Yarn executable was not detected in the system.
+ DEBUG [fd9a7d6e] 	Download Yarn at https://yarnpkg.com/en/docs/install
+ DEBUG [fd9a7d6e] 	I, [2020-04-13T13:06:59.209637 #17944]  INFO -- : Writing /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/application-353eddbe342fe877d2b2a512501673f8c3e94be2b30bccca4fc8b1871a1db1a7.css
+ DEBUG [fd9a7d6e] 	I, [2020-04-13T13:06:59.210178 #17944]  INFO -- : Writing /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/application-353eddbe342fe877d2b2a512501673f8c3e94be2b30bccca4fc8b1871a1db1a7.css.gz
+  INFO [fd9a7d6e] Finished in 7.174 seconds with exit status 0 (successful).
+ DEBUG [10b8b21e] Running if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [10b8b21e] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi
+ DEBUG [10b8b21e] Finished in 0.039 seconds with exit status 0 (successful).
+  INFO [8223a2bf] Running /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/releases/20200413130646/assets_manifest_backup as ec2-user@13.112.250.117
+ DEBUG [8223a2bf] Command: cd /home/ec2-user/aws-Bookers2-master/releases/20200413130646 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env mkdir -p /home/ec2-user/aws-Bookers2-master/releases/20200413130646/assets_manifest_backup )
+  INFO [8223a2bf] Finished in 0.046 seconds with exit status 0 (successful).
+ DEBUG [7313ceb2] Running /usr/bin/env ls /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/.sprockets-manifest* as ec2-user@13.112.250.117
+ DEBUG [7313ceb2] Command: cd /home/ec2-user/aws-Bookers2-master/releases/20200413130646 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ls /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/.sprockets-manifest* )
+ DEBUG [7313ceb2] 	/home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/.sprockets-manifest-74bc74912e815df4586e62820d6dff08.json
+ DEBUG [7313ceb2] Finished in 0.038 seconds with exit status 0 (successful).
+ DEBUG [580e60e1] Running /usr/bin/env ls /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/.sprockets-manifest* as ec2-user@13.112.250.117
+ DEBUG [580e60e1] Command: cd /home/ec2-user/aws-Bookers2-master/releases/20200413130646 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ls /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/.sprockets-manifest* )
+ DEBUG [580e60e1] 	/home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/.sprockets-manifest-74bc74912e815df4586e62820d6dff08.json
+ DEBUG [580e60e1] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [00148e58] Running /usr/bin/env cp /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/.sprockets-manifest-74bc74912e815df4586e62820d6dff08.json /home/ec2-user/aws-Bookers2-master/releases/20200413130646/assets_manifest_backup as ec2-user@13.112.250.117
+ DEBUG [00148e58] Command: cd /home/ec2-user/aws-Bookers2-master/releases/20200413130646 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env cp /home/ec2-user/aws-Bookers2-master/releases/20200413130646/public/assets/.sprockets-manifest-74bc74912e815df4586e62820d6dff08.json /home/ec2-user/aws-Bookers2-master/releases/20200413130646/assets_manifest_backup )
+  INFO [00148e58] Finished in 0.037 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [24fe2236] Running if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [24fe2236] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/releases/20200413130646; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases/20200413130646'" 1>&2; false; fi
+ DEBUG [24fe2236] Finished in 0.032 seconds with exit status 0 (successful).
+  INFO [5fade4e7] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as ec2-user@13.112.250.117
+ DEBUG [5fade4e7] Command: cd /home/ec2-user/aws-Bookers2-master/releases/20200413130646 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+ DEBUG [5fade4e7] 	== 20200403125952 DeviseCreateUsers: migrating ================================
+-- create_table(:users)
+   -> 0.0007s
+-- add_index(:users, :email, {:unique=>true})
+   -> 0.0006s
+-- add_index(:users, :reset_password_token, {:unique=>true})
+   -> 0.0008s
+== 20200403125952 DeviseCreateUsers: migrated (0.0023s) =======================
+
+== 20200404031257 AddProfileImageIdToUsers: migrating =========================
+-- add_column(:users, :profile_image_id, :string)
+   -> 0.0005s
+== 20200404031257 AddProfileImageIdToUsers: migrated (0.0005s) ================
+
+== 20200404034550 CreateBooks: migrating ======================================
+-- create_table(:books)
+   -> 0.0006s
+== 20200404034550 CreateBooks: migrated (0.0006s) =============================
+
+== 20200404082641 AddIntroductionToUsers: migrating ===========================
+-- add_column(:users, :introduction, :text)
+   -> 0.0005s
+== 20200404082641 AddIntroductionToUsers: migrated (0.0005s) ==================
+
+== 20200404114612 AddUserIdToBooks: migrating =================================
+-- add_column(:books, :user_id, :integer)
+   -> 0.0005s
+== 20200404114612 AddUserIdToBooks: migrated (0.0005s) ========================
+
+  INFO [5fade4e7] Finished in 1.872 seconds with exit status 0 (successful).
+  INFO [452713c7] Running /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/releases/20200413130646 /home/ec2-user/aws-Bookers2-master/releases/current as ec2-user@13.112.250.117
+ DEBUG [452713c7] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ln -s /home/ec2-user/aws-Bookers2-master/releases/20200413130646 /home/ec2-user/aws-Bookers2-master/releases/current )
+  INFO [452713c7] Finished in 0.269 seconds with exit status 0 (successful).
+  INFO [da254c12] Running /usr/bin/env mv /home/ec2-user/aws-Bookers2-master/releases/current /home/ec2-user/aws-Bookers2-master as ec2-user@13.112.250.117
+ DEBUG [da254c12] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env mv /home/ec2-user/aws-Bookers2-master/releases/current /home/ec2-user/aws-Bookers2-master )
+  INFO [da254c12] Finished in 0.034 seconds with exit status 0 (successful).
+ DEBUG [663f61e6] Running /usr/bin/env ls -x /home/ec2-user/aws-Bookers2-master/releases as ec2-user@13.112.250.117
+ DEBUG [663f61e6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env ls -x /home/ec2-user/aws-Bookers2-master/releases )
+ DEBUG [663f61e6] 	20200413092212	20200413130646
+ DEBUG [663f61e6] Finished in 0.033 seconds with exit status 0 (successful).
+ DEBUG [d5f48882] Running if test ! -d /home/ec2-user/aws-Bookers2-master/releases; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [d5f48882] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/releases; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/releases'" 1>&2; false; fi
+ DEBUG [d5f48882] Finished in 0.038 seconds with exit status 0 (successful).
+  INFO [d9bcecc9] Running /usr/bin/env echo "Branch master (at 98c650838cfd1608e8a852db3ef99724990d855b) deployed as release 20200413130646 by vagrant" >> /home/ec2-user/aws-Bookers2-master/revisions.log as ec2-user@13.112.250.117
+ DEBUG [d9bcecc9] Command: cd /home/ec2-user/aws-Bookers2-master/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" ; /usr/bin/env echo "Branch master (at 98c650838cfd1608e8a852db3ef99724990d855b) deployed as release 20200413130646 by vagrant" >> /home/ec2-user/aws-Bookers2-master/revisions.log )
+  INFO [d9bcecc9] Finished in 0.036 seconds with exit status 0 (successful).
+ DEBUG [a5138697] Running if test ! -d /home/ec2-user/aws-Bookers2-master/current; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/current'" 1>&2; false; fi as ec2-user@13.112.250.117
+ DEBUG [a5138697] Command: if test ! -d /home/ec2-user/aws-Bookers2-master/current; then echo "Directory does not exist '/home/ec2-user/aws-Bookers2-master/current'" 1>&2; false; fi
+ DEBUG [a5138697] Finished in 0.037 seconds with exit status 0 (successful).
+ DEBUG [0f932dfe] Running [ -f /home/ec2-user/aws-Bookers2-master/shared/tmp/pids/puma.pid ] as ec2-user@13.112.250.117
+ DEBUG [0f932dfe] Command: [ -f /home/ec2-user/aws-Bookers2-master/shared/tmp/pids/puma.pid ]
+ DEBUG [0f932dfe] Finished in 0.031 seconds with exit status 0 (successful).
+ DEBUG [e0ccc317] Running /usr/bin/env kill -0 $( cat /home/ec2-user/aws-Bookers2-master/shared/tmp/pids/puma.pid ) as ec2-user@13.112.250.117
+ DEBUG [e0ccc317] Command: cd /home/ec2-user/aws-Bookers2-master/current && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" RACK_ENV="production" ; /usr/bin/env kill -0 $( cat /home/ec2-user/aws-Bookers2-master/shared/tmp/pids/puma.pid ) )
+ DEBUG [e0ccc317] Finished in 0.038 seconds with exit status 0 (successful).
+  INFO [a9f60a43] Running $HOME/.rbenv/bin/rbenv exec bundle exec pumactl -S /home/ec2-user/aws-Bookers2-master/shared/tmp/pids/puma.state -F /home/ec2-user/aws-Bookers2-master/shared/puma.rb restart as ec2-user@13.112.250.117
+ DEBUG [a9f60a43] Command: cd /home/ec2-user/aws-Bookers2-master/current && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.7" RACK_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec pumactl -S /home/ec2-user/aws-Bookers2-master/shared/tmp/pids/puma.state -F /home/ec2-user/aws-Bookers2-master/shared/puma.rb restart )
+ DEBUG [a9f60a43] 	Command restart sent success
+  INFO [a9f60a43] Finished in 0.435 seconds with exit status 0 (successful).
