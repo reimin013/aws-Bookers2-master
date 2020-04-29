@@ -1,9 +1,22 @@
-## DMM WEBCAMPコンテンツ【デプロイを学ぼう】
-DMM WEBCAMPの学習コンテンツ【課題：アプリケーションを作成してみよう：応用編】で作成したアプリケーション【Bookers】を使い、デプロイを学びます。
+## DMM WEBCAMPコンテンツ
+DMM WEBCAMPの学習コンテンツ【課題：アプリケーションを作成してみよう：応用編】で作成したアプリケーション【Bookers】を使い、デプロイをしています。
+
+## 自作完成版アプリ
+
+URL：https://bookers2.work/
+
+以下の情報でログインできます<br>
+- Email: user@gmail.com
+- Password: userpass
+
+### インフラ
+
+AWS(EC2, RDS, Elastic IP)  
+
 
 ## 【Bookers】要件  
 
-完成アプリケーションURL：https://bookers-level2.herokuapp.com
+見本完成アプリケーションURL：https://bookers-level2.herokuapp.com
 
 ### 【実装する機能】
 
@@ -85,11 +98,11 @@ BookモデルはUserモデルと1対Nの関係性にあるということ。
 - 「グリッドシステム」を使ってレイアウトをしてください。
 - 今回は、レスポンシブ対応は特に指定しなくてかまいません。
 
-### 学習記録
+<!-- ### 学習記録
 - 開始日 4月3日：Userモデルを作成、sign_up / sign_in機能を実装
 - 終了日 4月7日：テストでエラーが出ないことを確認。グリッドシステムも導入。課題クリア。  
 ※アプリ名が「Bookers3」になっておりますが、内容は上記のものになります。
-※(2020/04/10更新)リポジトリ名を「Bookers2」に変更。PCでは「Bookers3」が開発中のapp,「Bookers2-master」が完成版のapp。
+2020/04/10更新)リポジトリ名を「Bookers2」に変更。PCでは「Bookers3」が開発中のapp,「Bookers2-master」が完成版のapp。 -->
 
 <!-- # README
 
