@@ -6,12 +6,13 @@ DMM WEBCAMPの学習コンテンツ【課題：アプリケーションを作成
 URL：https://bookers2.work/
 
 以下の情報でログインできます<br>
-- Email: user@gmail.com
+- name: user
 - Password: userpass
 
 ### インフラ
 
-AWS(EC2, RDS, Elastic IP)  
+- AWS(EC2, RDS, Elastic IP)
+- Webサーバ: Nginx
 
 
 ## 【Bookers】要件  
