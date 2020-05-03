@@ -18,6 +18,7 @@ class BooksController < ApplicationController
     #自分の投稿の一覧表示をする
     @user = User.find(@book2.user_id)
     #@book2のユーザーの情報を表示する,@book2.idだと本のidをとってきてしまう
+    @book_comment = BookComment.new
   end
 
   def create
