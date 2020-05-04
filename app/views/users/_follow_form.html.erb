@@ -1,0 +1,11 @@
+ <% unless current_user?(@user) %>
+  <div id="follow_form">
+  <% if current_user.following?(@user) %>
+   <!-- フォローを外す -->
+	<%= render 'unfollow', user: @user %>
+  <% else %>
+    <!-- フォローをする -->
+	<%= render 'follow', user: @user %>
+  <% end %>
+  </div>
+<% end %>  

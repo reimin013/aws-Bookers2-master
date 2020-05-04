@@ -11,8 +11,14 @@ Rails.application.routes.draw do
     resource :favorites, only: [:create, :destroy]
     resource :book_comments, only: [:create, :destroy]
   end
-
-  resources :users, only: [:show, :index, :edit, :update]
   delete 'books/:id' => 'books#destroy', as: 'destroy_book'
+
+  resources :users do
+    member do
+      get :following, :followers
+    end
+  end
+
+  resources :relationships, only: [:create, :destroy]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end

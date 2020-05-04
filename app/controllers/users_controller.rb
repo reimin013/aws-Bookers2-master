@@ -13,6 +13,7 @@ class UsersController < ApplicationController
   def index
     @book = Book.new
     @user = current_user
+    # @user = User.find(params[:id])
   	@users = User.all
   end
 
@@ -38,6 +39,18 @@ class UsersController < ApplicationController
      render :edit
      # redirect_toにすると、エラーメッセージが表示されない！！
     end
+  end
+
+  def following
+    @user  = User.find(params[:id])
+    @users = @user.followings
+    render 'show_follow'
+  end
+
+  def followers
+    @user  = User.find(params[:id])
+    @users = @user.followers
+    render 'show_follower'
   end
 
   private
